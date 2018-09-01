@@ -1,0 +1,171 @@
+﻿<html>
+<head>
+<title>Создание простой страницы на HTML</title>
+<style type="text/css" >
+
+h1 {
+   display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 25px;
+  border: none;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 3px 0 #000 , 4px 4px 0 #000 , 5px 5px 0 #000 , 6px 6px 0 #000;
+}
+
+a1 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 3px 0 #000 , 4px 4px 0 #000 , 5px 5px 0 #000 , 6px 6px 0 #000;
+}
+
+r {
+	color: red;
+}
+
+g {
+	color: green;
+}
+
+y {
+	color: purple;
+}
+
+td { padding: 10px; }
+td.izo {background-size: cover;
+		background-position-x: center;
+	    }	
+td.jiv {background-size: cover;}
+td.graf {background-size: cover;
+	    background-position-x: center;
+		}
+td.fot {background-size: cover;
+	    background-position-x: right;
+		}	
+td.dec {background-size: cover;
+	    background-position-x: center;
+		}	
+td.scul {background-size: cover;
+	    background-position-x: center;
+		}	
+td.hud {background-size: cover;
+	    background-position-x: center;
+		}	
+
+</style>
+
+</head>
+<table style="border-style:solid; border-width:2; border-color:black">
+<tr>
+<td align="center" background="infahead.png"  width="1380" colspan=20 style="border-width:2; border-style:none; background-color:solid" > 
+	<h1>Галерея искуств</h1>
+</td>	
+</tr>
+
+<tr>
+<td class="izo" align="center" background="Izo.jpg" height="50" width="50" style="border-width:2; border-style:solid"> 
+	<a href="GW.html"><a1>Изобразительное искусство</a1><a>
+</td>
+
+<!-- Основной текст -->
+<td rowspan=7 colspan=7>
+<p>
+<h2>Создание простой страницы на HTML</h2>
+<p>На этой странице вы узнаете как создать <a href="test.html">простой сайт</a> на HTML</p>
+<img src="Cod.jpg" width="800" height="600">
+
+<p>
+<ol>
+Итак, я собираюсь объяснить каждую строчку кода.
+<li>Каждый сайт начинается с тега<r> &lt html &gt. </r>
+<li>Затем мы пишем голову сайта (тег <r> &lt head &gt. </r>). Тег <r> &lt title &gt. </r> говорит компьютеру, что писать во вкладку.
+<li>Далее мы объявляем туловище нашего сайта (тег <r> &lt body &gt. </r>), а также задаём фон страницы с помощью атрибута <g>background</g><y>="ссылка на картинку/название картинки в папке, где нагодится сайт"</y>.
+<li>Оъбявляем таблицу и задаём её толщену границ с помощью атрибута <g>border</g><y>="число"</y>
+<li>Создаём строку таблицы (тег <r> &lt tr &gt. </r>).
+<li>В строке создаём ячейку (тег <r> &lt td &gt. </r>). Атрибутом <g>colspan</g><y>="число"</y> мы говорим, сколько колон объединить вместе, атрибут <g>bgcolor</g><y>="код цвета с #" мы назначаем цвет, а атрибут align="right | center | left" мы указываем, как надо выравнить текст.</y>
+<li>Тег <r> &lt p &gt. </r> начинает текст с новой строки.
+<li>Атрибут <g>rowspan</g><y>="число"</y> мы говорим, сколько строк объединить вместе.
+<li>Тег <r> &lt h2 &gt. </r> превращает текст в заголовок (От гланого 1 до последнего 5)
+<li>Самый главный тег в HTML - это тег <r> &lt a &gt. </r> Он в связке с атрибутом <g>href</g><y>="ссылка на сайт/сайт.html"</y> позволяет создавать ссылки, которые осуществляют перемещение по сайту
+<li>На послеток несколько советов:
+<bR>	-Проверяйте закрыты ли у вас теги!
+<bR>	-Не бойтесь пытатся узнать что то новое.
+<bR>	-Если что-то не понятно, то существует сайт <a href="https://htmlbook.ru">htmlbook.ru</a>, где вы найдёте много информации по HTML и не только.  
+
+
+<h2>Видео о том, как создовалать ЭТА страница</h2>
+<bR>Это запись стрима, в котором я писал эту страницу, попутно обучаюясь этому нелёгкому делу
+<BR><video width="400" height="300" controls="controls" poster="Cod.jpg">
+<source src="video.mp4">
+
+</p>
+
+</p>
+</td>
+
+</tr>
+
+<tr>
+<td class="jiv" align="center" background="Jivopis.jpg" height="10" width="100" style="border-width:2; border-style:solid"> 
+<a href="Jiv.html"><a1>Живопись</a1></a>
+</td>
+</tr>
+
+<tr>
+<td class="graf" align="center" background="Grafika.jpg"  width="100" height="25" style="border-width:2; border-style:solid"> 
+<a href="Graf.html"><a1>Графика</a1></a>
+</td>
+</tr>
+
+<tr>
+<td class="fot" align="center" background="Foto.jpg" width="100" height="25" style="border-width:2; border-style:solid"> 
+<a href="Foto.html"><a1>Фотоискусство</a1></a>
+</td>
+</tr>
+
+<tr>
+<td class="dec" align="center" background="Dec.jpg" width="100" height="25" style="border-width:2; border-style:solid"> 
+<a href="Prik.html"><a1>Декоративно-прикладное искусство</a1></a>
+</td>
+</tr>
+
+<tr>
+<td class="scul" align="center" background="scul.jpg" width="100" height="25" style="border-width:2; border-style:solid">
+<a href="Scul.html"><a1>Скульптура</a1></a>
+<td>
+</tr>
+
+<tr>
+<td class="hud" align="center" background="hud.jpg" width="100" height="25" style="border-width:2; border-style:solid">
+<a href="HcsfGA.html"><a1>Мастер класс по HTML</a1></a>
+</td>
+</tr>
+
+<!--Связь-->
+<tr>
+<td align="right" height="100" width="1280" colspan=20 style="border-width:2; border-style:none; background-color:#595959"> 
+	<a href ="https://vk.com/qawerz"><a1>Vk</a1></a>
+	<br><a href ="https://www.instagram.com/qawerz666/"><a1>Instagram</a1></a>
+	<br><a href ="https://qawerz.deviantart.com/"><a1>DeviantArt<a1></a>
+	<br><a href ="https://ru.pinterest.com/alexsey2440/"><a1>Pinterest</a1></a>
+	<br><a1>alex__D@list.ru</a1>
+</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
