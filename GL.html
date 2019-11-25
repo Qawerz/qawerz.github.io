@@ -1,15 +1,62 @@
 <HTML>
 <HEAD>
 <TITLE>Tsss</TITLE>
+<style type="text/css">
+html {
+	padding: 0;
+	margin: 0;
+}
+.modalDialog {
+ position: fixed;
+ font-family: Arial, Helvetica, sans-serif;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: #FFF;
+ z-index: 99999;
+ display: block;
+}
+ 
+.modalDialog > div {
+ width: 400px;
+ position: relative;
+ margin: 10% auto;
+ padding: 5px 20px 13px 20px;
+ border-radius: 10px;
+}
+.close {
+	display: none;
+}
+</style>
+<script type="text/javascript">
+function my_proverka () {
+var code = document.getElementById("my_pass").value;
+var pass = "16180339";
+if (code == pass) {
+var win = document.getElementById("openModal");
+win.classList.add("close");
+}
+}
+</script>
+<div id="openModal" class="modalDialog">
+   <div>
+      <h2>Введите пароль</h2>
+<input type="password" id="my_pass" placeholder="Введите пароль сюда">
+<input type="submit" onclick="my_proverka();" value="Войти">
+   </div>
+</div>
+
 </HEAD>
 
+
 <BODY>
-	<script language="JavaScript">
+	<!--<script language="JavaScript">
 	2
 	pass = prompt('Enter Password, please:');
 	3
 	if (pass=='16180339') { alert('Добро пожаловать, госпадин!') } else { alert('Уди прочь, чужак!'), top.location.href="https://qawerz.github.io/GL.html" }
-	</script>
+	</script> -->
 
 <TABLE DIR=LTR BORDER>
 <CAPTION>Tsss</CAPTION>
