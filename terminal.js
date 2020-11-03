@@ -69,14 +69,15 @@ function keypress_handle(e, el){
 ///////////////
 
 
-term.commands.push(['help',  //command name
-	function(){														//
-		var help_str = '<br>';										//
-		for (var i = 0; i < term.commands.length; i++){				//Command function
-      help_str += term.commands[i][0]+term.commands[i][2]+"<br>";	//
-	}																//
-  return help_str			//return to output
-}, ' - show all commands' //description
+term.commands.push(['help',  
+	function(){														
+		var help_str = '<ul>';										
+		for (var i = 0; i < term.commands.length; i++){				
+      help_str += '<li>'+term.commands[i][0]+term.commands[i][2]+"</li>";	
+  }
+  help_str += '</ul>';																
+  return help_str			
+}, ' - show all commands' 
 ]);
 
 term.commands.push(['echo',
