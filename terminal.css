@@ -24,13 +24,13 @@ input#cmdinput {
     color: red;
 }
 
-#link{
-    text-decoration: none;
+a{
+    cursor: pointer;
     color: inherit
 }
 
-#link:visited{
-    text-decoration: none;
+a:visited{
+    cursor: pointer;
     color: inherit
 }
 
