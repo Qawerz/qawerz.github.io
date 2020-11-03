@@ -1,39 +1,35 @@
+<!DOCTYPE html>
+<html>
 <head>
-<title>Qawerz</title>
+<link rel="stylesheet" href="terminal.css">
+<script defer src="terminal.js"></script>
+<script type="text/javascript">
+function getDate()
+{
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    //По надобности условие ниже повторить с minutes и hours
+    if(seconds < 10)
+    {
+        seconds = '0' + seconds;
+    }
+    document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+}
+setInterval(getDate, 0);
+</script>
 </head>
-<body background="bg.jpeg">
 
-<table border="2" bgcolor="white">
-
-<tbody><tr>
-<td colspan="20" bgcolor="#11B8A2" align="center" >
-<p><a href="https://vk.com/qawerz">Qawerz</a></p>				
-</td>
-</tr>
-
-<tr>
-<t
-</p>
-</td>
-
-
-
-
-</td>
-
-<td rowspan="2">
-<p><a href="https://qawerz.github.io/Matrix.html">Matrix Screensaver </a></p>
-<p><a href="https://qawerz.github.io/412proj/GW.html">Мой школьный проект по информатике</a></p>
-<p><a href="https://qawerz.github.io/RTE.html">Real Time Code Editor</a></p>
-
-</td></tr>
-
-</p>
-</td>
-</tr>
-
-</tbody></table>
-
-
+<body>
+	<span id="terminal">
+	  <span id="out"><a id="link" href="https://github.com/Qawerz">qawerz.github.io</a><br>Terminal V1.0 | <span id="timedisplay"></span><br></span><br>
+	</span> 
+	  <span id="prompt">$ </span><input autofocus="true" id="cmdinput" type="text"  onkeypress="keypress_handle(event, this)" />
 	
+
 </body>
+</html>
+
+
+
